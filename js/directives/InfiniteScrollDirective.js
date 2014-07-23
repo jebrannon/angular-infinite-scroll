@@ -4,11 +4,16 @@ app.directive('ngInfiniteScroll', ['$window', function($window) {
 		link: function(scope, elem, attrs) {
 			var _$window = angular.element($window);
 			var _$message = elem.find('.message');
+			var _$loader = elem.find('.load-more');
 			var _offset = elem.height() - _$window.height();
-			var handleEvent;
+			// var _this = this;
+
+			// var handleEvent;
+			// var 
 
 
 			console.log(attrs);
+			console.log(_$loader[0]);
 
 			//  Listeners
 			_$window.on('scroll', function(e) {
