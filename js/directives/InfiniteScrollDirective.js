@@ -22,11 +22,11 @@ app.directive('ngInfiniteScroll', ['$window', function($window) {
 			handleEvent = function (e) {
 				switch(e.type) {
 					case 'scroll':
-						_$message.html(_offset + ' - ' + _$window.scrollTop());
+						_$message.html(_offset + ' : ' + _$window.scrollTop());
 						break;
 					case 'resize':
 						_offset = elem.height() - _$window.height();
-						_$message.html(_offset + ' - ' + _$window.scrollTop());
+						_$message.html(_offset + ' : ' + _$window.scrollTop());
 						break;
 				}
 			}
