@@ -1,1 +1,1 @@
-var app = angular.module('PrototypeApp',[]);
+var app = angular.module('ngApp', []);
